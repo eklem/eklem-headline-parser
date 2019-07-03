@@ -1,5 +1,5 @@
-eklem-headline-parser
-===============
+# headline-keyword-extractor
+
 
 A forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser) [NPM package](https://www.npmjs.org/package/headline-parser) that determines the most relevant keywords in a headline by considering article context.
 
