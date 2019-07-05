@@ -1,11 +1,11 @@
-# headline-keyword-extractor
+# eklem-headline-parser
 
 
 A forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser) [NPM package](https://www.npmjs.org/package/headline-parser) that determines the most relevant keywords in a headline by considering article context.
 
 ## Installation
 
-    $ npm install headline-parser
+    $ npm install eklem-headline-parser
   
 Use the `--save` flag to include the module in your package.json
   
@@ -14,7 +14,7 @@ Use the `--save` flag to include the module in your package.json
 Require the parser
 
 ```javascript
-var headline_parser = require("headline-parser");
+var headline_parser = require("eklem-headline-parser");
 
 // Declare variables for your headline and article summary. These have been edited to provide a good example.
 
