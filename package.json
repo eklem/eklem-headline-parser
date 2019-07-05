@@ -4,7 +4,9 @@
   "description": "Determines the most relevant keywords from an article headline",
   "main": "headline-parser.js",
   "scripts": {
-    "test": "tape ./test/test.js"
+    "compile-for-browser": "webpack",
+    "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
+    "test": "npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && npm run empty-sandbox"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "stopword": "^0.3.0"
   },
   "devDependencies": {
+    "glob": "7.1.4",
     "standard": "^12.0.1",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
