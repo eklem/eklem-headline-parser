@@ -11,7 +11,7 @@ const glob = require('glob')
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'headline-parser.' + package.version+ '.js',
-      library: 'headline_parser'
+      library: 'headlineP'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   }
