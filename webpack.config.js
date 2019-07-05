@@ -1,6 +1,6 @@
 const path = require('path')
 const package = require('./package.json')
-const glob = require('glob')
+const glob = require('glob')  
 
 
   // Generating browser version of stopword
@@ -11,7 +11,7 @@ const glob = require('glob')
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'headline-parser.' + package.version+ '.js',
-      library: 'headlineP'
+      library: 'headline_parser'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   }
