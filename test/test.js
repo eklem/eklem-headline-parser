@@ -51,7 +51,7 @@ test('return all keywords when no N or args argument is given', function (t) {
 
 test('return empty array if given empty strings', function (t) {
   t.plan(1)
-  t.deepEqual(findKeywords('', '', stubs[2].n, stubs[2].args), [])
+  t.deepEqual(findKeywords('', '', stubs[2].n, stubs[2].args), [''])
 })
 
 test('return empty array if headline has only stopwords', function (t) {

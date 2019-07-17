@@ -1,7 +1,8 @@
-var extractor = require('keyword-extractor');
+// var extractor = require('keyword-extractor')
+var sw = require('stopword')
 
 var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
-  keywordArgs = keywordArgs || { language:"english", return_changed_case:true };
+  keywordArgs = keywordArgs || { language:'en', return_changed_case:true };
   
   // Set returnNonMatched to false if not given
   returnNonMatched = returnNonMatched || false;
@@ -9,7 +10,22 @@ var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
   body = body.split(' ');
 
   // Extract keywords from headline. Returns an array
-  keywordArray = extractor.extract( headline, keywordArgs );
+  //keywordArray = extractor.extract( headline, keywordArgs )
+
+  var stopwordWrapper = function(headline, keywordArgs){
+    if (keywordArgs.language === 'english') {
+      keywordArgs.language === 'en'
+    }
+    var languageArray = sw[keywordArgs.language]
+    var newString = sw.removeStopwords(headline.split(' '), languageArray)
+    console.log(newString)
+    if (newString === ['']) {
+      newString === []
+    }
+    return newString
+  }
+
+  keywordArray = stopwordWrapper(headline, keywordArgs)
 
   // if no N is given, set n to max length. // todo: just set to infinity?
   n = n || keywordArray.length;
