@@ -7,18 +7,17 @@ var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
   // Set returnNonMatched to false if not given
   returnNonMatched = returnNonMatched || false;
 
-  body = body.split(' ')
-  headline = headline.split(' ')
+  // body = body.split(' ')
+  // headline = headline.split(' ')
 
   // Extract keywords from headline. Returns an array
   var stopwordWrapper = function(headline, keywordArgs){
     var languageArray = sw[keywordArgs.language]
-    var newString = sw.removeStopwords(headline, languageArray)
-    console.log(newString)
-    if (newString === ['']) {
-      newString === []
+    var newArray = sw.removeStopwords(headline, languageArray)
+    if (newArray === ['']) {
+      newArray === []
     }
-    return newString
+    return newArray
   }
 
   keywordArray = stopwordWrapper(headline, keywordArgs)
@@ -58,7 +57,6 @@ var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
     return sortedKeys.slice(-n);
   }
 }
-
 
 module.exports = {
   findKeywords: findKeywords
