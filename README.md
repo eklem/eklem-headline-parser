@@ -19,6 +19,9 @@ var headline_parser = require("eklem-headline-parser")
 </script>
 ```
 
+### Calculating some keywords
+
+```javascript
 // Declare variables for your headline and article summary. These have been edited to provide a good example.
 
 var headline = 'China successfully develops drone defense system';
@@ -30,7 +33,6 @@ var important_keywords = headline_parser.findKeywords(headline.split(' '), body.
 
 // => Returns the top three occuring words [ 'china', 'drone', 'defense' ], with 'defense' appearing most often.
 ```
-
 
 ## API
 

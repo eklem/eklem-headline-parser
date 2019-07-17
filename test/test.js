@@ -8,14 +8,14 @@ var stubs = [
     body: "OUAGADOUGOU (Reuters) - Burkina Faso's opposition parties, the United States and the African Union rejected the army's seizure of power in the West African country on Saturday after the resignation of President Blaise Compaore, setting the stage for fresh street protests.",
     n: 1,
     returnNonMatched: false,
-    args: {language:"english", return_changed_case:false}
+    args: {language:'en', return_changed_case:false}
   },
   {
-    headline: "absolutely exclamation final",
-    body: "final exclamation exclamation absolutely absolutely absolutely",
+    headline: "is an absolutely exclamation final",
+    body: "is final an exclamation exclamation absolutely absolutely absolutely",
     n: 3,
     returnNonMatched: false,
-    args: {language:"english", return_changed_case:false},
+    args: {language:'en', return_changed_case:false},
   },
   {
     headline: "a the and if",
@@ -28,7 +28,7 @@ var stubs = [
     headline: "imperative otter shenanigans",
     body: "there are no mentions of the headline keywords in this sentence",
     n: 3,
-    args: {language:"english", return_changed_case:false},
+    args: {language:'en', return_changed_case:false},
     returnNonMatched: false,
   },
 ]
