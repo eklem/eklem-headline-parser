@@ -1,4 +1,3 @@
-// var extractor = require('keyword-extractor')
 var sw = require('stopword')
 
 var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
@@ -6,9 +5,6 @@ var findKeywords = function( headline, body, n, keywordArgs, returnNonMatched ){
   
   // Set returnNonMatched to false if not given
   returnNonMatched = returnNonMatched || false;
-
-  // body = body.split(' ')
-  // headline = headline.split(' ')
 
   // Extract keywords from headline. Returns an array
   var stopwordWrapper = function(headline, keywordArgs){

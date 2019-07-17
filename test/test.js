@@ -1,6 +1,6 @@
-const headlineP = require('../headline-parser.js')
-const test = require('tape')
-const findKeywords = headlineP.findKeywords
+var headlineParser = require('../headline-parser.js')
+var test = require('tape')
+var findKeywords = headlineParser.findKeywords
 
 var stubs = [
   {

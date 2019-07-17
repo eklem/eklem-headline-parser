@@ -7,15 +7,15 @@ Determines in node.js and the broswer the most relevant keywords in a headline b
 ### Node.js
 
 ```javascript
-var headline_parser = require("eklem-headline-parser")
-// headline_parser.findKeywords(headline, body [, n][, args][, returnNonMatched]) now available
+var headlineParser = require("eklem-headline-parser")
+// headlineParser.findKeywords(headline, body [, n][, args][, returnNonMatched]) now available
 ```
 
 ### Script tag method
 ```javascript
 <script src="headline-parser.js"></script>
 <script>
-// headline_parser.findKeywords(headline, body [, n][, args][, returnNonMatched]) now available
+// headlineParser.findKeywords(headline, body [, n][, args][, returnNonMatched]) now available
 </script>
 ```
 
