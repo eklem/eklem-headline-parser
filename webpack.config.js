@@ -10,7 +10,10 @@ module.exports =  [
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'headline-parser.' + package.version+ '.js',
-      library: 'headlineP'
+      library: 'ehp'
+    },
+    externals: {
+      stopword: 'stopword'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   },
