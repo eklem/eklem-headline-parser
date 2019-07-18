@@ -1,6 +1,6 @@
 # eklem-headline-parser
 
-Determines in node.js and the broswer the most relevant keywords in a headline by considering article context. Started as a forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser).
+Determines the most relevant keywords in a headline by considering article context. Works for Node.js and the browser. Started as a forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser).
 
 ## Usage
 
