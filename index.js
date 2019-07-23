@@ -39,7 +39,7 @@ const findKeywords = function( headline, body, cutoff = 0){
   return keywords
 }
 
-function findExistingWord(array, attr, value) {
+const findExistingWord = function(array, attr, value) {
   for(var k = 0; k < array.length; k += 1) {
       if(array[k][attr] === value) {
           return k;
@@ -48,7 +48,7 @@ function findExistingWord(array, attr, value) {
   return -1;
 }
 
-function compareObjects( a, b ) {
+const compareObjects = function( a, b ) {
   if ( a.count > b.count ){
     return -1;
   }
