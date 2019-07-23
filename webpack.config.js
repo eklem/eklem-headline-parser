@@ -5,7 +5,7 @@ const glob = require('glob')
 module.exports =  [
   // Generating browser version of stopword
   {
-    mode: 'production',
+    mode: 'development',
     entry: './headline-parser.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -13,7 +13,7 @@ module.exports =  [
       library: 'ehp'
     },
     externals: {
-      stopword: 'stopword'
+      sw: 'sw'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   },
