@@ -7,17 +7,15 @@ const findKeywords = function( headline, body, cutoff = 0){
   // returned array (cutoff if != 0)
   let keywords = []
 
-  // loop through headline
+  // loop through headline and body
   for (var i = 0; i < headline.length; i++) {
-    // loop through body with each of the words in headline
     for (var j = 0; j < body.length; j++) {
       // headline/body mathching
       if (headline[i] === body[j]) {
-        // check if word exists in keywordsCount first
+        // check if word exists in keywordsCount first and update it
         let existing = findExistingWord(keywordsCount, 'word', headline[i])
         if (existing > -1) {
           keywordsCount[existing].count++
-          // update count on word object
         } else {
           // create object and push to array
           let wordObj = {word: headline[i], count: 1}
@@ -28,7 +26,7 @@ const findKeywords = function( headline, body, cutoff = 0){
   }
 
   // Sort on most times used in body
-  keywordsCount.sort(compare)
+  keywordsCount.sort(compareObjects)
   // loop through keywordsCount and push word to keywords
   for (let l = 0; l < keywordsCount.length; l++) {
     keywords.push(keywordsCount[l].word)
@@ -50,7 +48,7 @@ function findExistingWord(array, attr, value) {
   return -1;
 }
 
-function compare( a, b ) {
+function compareObjects( a, b ) {
   if ( a.count > b.count ){
     return -1;
   }
