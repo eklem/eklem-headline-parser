@@ -36,6 +36,17 @@ const findKeywords = function( headline, body, cutoff = 0){
   // Sort on most times used in body
   keywordsCount.sort(compare)
   console.dir(keywordsCount)
+  // loop through keywordsCount and push word to keywords
+  for (let l = 0; l < keywordsCount.length; l++) {
+    keywords.push(keywordsCount[l].word)
+  }
+  console.dir(keywords)
+  // slice, if cutoff set
+  if (cutoff > 0) {
+    keywords = keywords.slice(0,cutoff)
+  }
+  console.dir(keywords)
+  return keywords
 }
 
 function findExistingWord(array, attr, value) {
@@ -57,10 +68,11 @@ function compare( a, b ) {
   return 0;
 }
 
+//const titleArray = ['her', 'var', 'det', 'bra']
 const titleArray = ['words', 'I', 'have', 'some', 'interesting', 'words', 'words']
 const bodyArray = ['There', 'is', 'a', 'chance', 'that', 'some', 'words', 'are', 'interesting', 'words', 'interesting', 'words']
 
-findKeywords(titleArray,bodyArray)
+findKeywords(titleArray,bodyArray,2)
 
 // module.exports = {
 //   findKeywords: findKeywords
