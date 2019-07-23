@@ -1,14 +1,9 @@
 const findKeywords = function( headline, body, cutoff = 0){
-  console.log('headline: ' + headline)
   // remove duplicates in headline
   headline = [...new Set(headline)]
-  console.log('headline: ' + headline)
-  console.log('body:     ' + body)
-  console.log('cutoff:   ' + cutoff)
-
+  
   // keywords array of word objects with word count
   let keywordsCount = []
-
   // returned array (cutoff if != 0)
   let keywords = []
 
@@ -21,7 +16,6 @@ const findKeywords = function( headline, body, cutoff = 0){
         // check if word exists in keywordsCount first
         let existing = findExistingWord(keywordsCount, 'word', headline[i])
         if (existing > -1) {
-          console.log('Should update count on word: ' + headline[i] + ' indexOf ' + existing)
           keywordsCount[existing].count++
           // update count on word object
         } else {
@@ -29,18 +23,16 @@ const findKeywords = function( headline, body, cutoff = 0){
           let wordObj = {word: headline[i], count: 1}
           keywordsCount.push(wordObj)
         }
-        console.dir(keywordsCount)
       }
     }
   }
+
   // Sort on most times used in body
   keywordsCount.sort(compare)
-  console.dir(keywordsCount)
   // loop through keywordsCount and push word to keywords
   for (let l = 0; l < keywordsCount.length; l++) {
     keywords.push(keywordsCount[l].word)
   }
-  console.dir(keywords)
   // slice, if cutoff set
   if (cutoff > 0) {
     keywords = keywords.slice(0,cutoff)
