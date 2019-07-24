@@ -33,7 +33,7 @@ let body = 'China has tested a self-developed laser defense system against small
 // Find the most relevant keywords in the headline, sorted by number of appearances in the body text
 let important_keywords = headline_parser.findKeywords(stopword.removeStopwords(headline.split(' ')), body.split(' '), 3);
 
-// => Returns the top three occuring words [ 'drone', 'defence', 'China' ], with 'defense' appearing most often.
+// => Returns the top three occuring words [ 'drone', 'defence', 'China' ], with 'drone' appearing most often.
 ```
 
 ## API
@@ -54,4 +54,4 @@ It's pretty simple.  The parser will count how many times a word in a title is r
 
 The parser is language agnostic, but for better accuracy, you should use the [stopword](https://www.npmjs.org/package/stopword) module to obtain only the words that are not stopwords. For this to happen, you need to define which langauge is used in the text analyzed.
 
-Some things to note: The module will not count partial appearances of keywords, or compounded keywords. For instance, if one of your headline keywords is ['china'], then neither "China", "china's" or "Indochina" will be counted as an appearance of that keyword. Additionally, unless the `args` object is supplied with  a `return_changed_case: false` parameter, the module will count only the lowercase appearances of the word.
+Some things to note: The module will not count partial appearances of keywords, or compounded keywords. For instance, if one of your headline keywords is ['china'], then neither "China", "china's" or "Indochina" will be counted as an appearance of that keyword.
