@@ -35,7 +35,6 @@ const findKeywords = function( headline, body, cutoff = 0){
   if (cutoff > 0) {
     keywords = keywords.slice(0,cutoff)
   }
-  console.dir(keywords)
   return keywords
 }
 
