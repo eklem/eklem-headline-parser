@@ -58,12 +58,6 @@ const compareObjects = function( a, b ) {
   return 0;
 }
 
-//const titleArray = ['her', 'var', 'det', 'bra']
-const titleArray = ['words', 'I', 'have', 'some', 'interesting', 'words', 'words']
-const bodyArray = ['There', 'is', 'a', 'chance', 'that', 'some', 'words', 'are', 'interesting', 'words', 'interesting', 'words']
-
-findKeywords(titleArray,bodyArray,2)
-
-// module.exports = {
-//   findKeywords: findKeywords
-// }
+module.exports = {
+  findKeywords: findKeywords
+}
