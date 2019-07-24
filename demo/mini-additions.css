@@ -17,15 +17,15 @@ h2 {
   padding:10px;
 }
 
-#newString {
+#keywords {
   padding: 10px;
   background: #eeeeee;
 }
-#stopwordsRemoved span {
+#keywordsFound span {
   font-size:1.2rem;
 }
 
-input#text {
+input {
   width:100%;
   font-size:1.2rem;
   margin-left:0;

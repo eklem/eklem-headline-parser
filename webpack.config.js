@@ -5,8 +5,8 @@ const glob = require('glob')
 module.exports =  [
   // Generating browser version of stopword
   {
-    mode: 'development',
-    entry: './headline-parser.js',
+    mode: 'production',
+    entry: './index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'headline-parser.' + package.version+ '.js',

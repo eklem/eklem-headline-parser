@@ -2,10 +2,10 @@
 const populateKeywords = function(result) {
   console.log('Boom')
   console.log(result)
-  const node = document.createElement('pref')
+  const node = document.createElement('span')
   node.innerHTML = result
-  emptyElement('keywords')
-  document.getElementById('keywords').appendChild(node)
+  emptyElement('keywordsFound')
+  document.getElementById('keywordsFound').appendChild(node)
 }
 
 // Listen to key up on headlinetext and initiate a headline parser
@@ -25,7 +25,7 @@ const calculateKeywords = function () {
   console.log(headlinetext)
   console.log(bodytext)
   var importantKeywords = []
-  var importantKeywords = ehp.findKeywords(headlinetext, bodytext, 100, { language:'no' },  {returnNonMatched:false});
+  var importantKeywords = ehp.findKeywords(stopword.removeStopwords(headlinetext), bodytext);
   console.log('Keywords: ' + importantKeywords)
   populateKeywords(importantKeywords)
 }

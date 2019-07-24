@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./mini-default.min.css">
     <link rel="stylesheet" href="./mini-additions.css">
     <script src="../dist/headline-parser.2.0.0.js"></script>
-    <script src="../../stopword/dist/stopword.0.3.2.js"></script>
+    <script src="../node_modules/stopword/dist/stopword.0.3.1.js"></script>
     <title>Stopword browser demo</title>
   </head>
 
@@ -15,19 +15,21 @@
       <h1>Headline parser demo</h1>
     </div>
 
-    <div id="headline">
-      <h2>Headline</h2>
-      <input type="text" id="headlinetext" placeholder="Add a headline" /><br />
-    </div>
+    <div id="addContainer">
+      <div id="headline">
+        <h2>Headline</h2>
+        <input type="text" id="headlinetext" placeholder="Add a headline" /><br />
+      </div>
 
-    <div id="body">
-      <h2>Body</h2>
-      <input type="text" id="bodytext" placeholder="Add a lot of body text" /><br />
+      <div id="body">
+        <h2>Body</h2>
+        <input type="text" id="bodytext" placeholder="Add a lot of body text" /><br />
+      </div>
     </div>
 
     <div id="keywords">
       <h2>Keywords extracted</h2>
-      <div id="keywords"></div>
+      <div id="keywordsFound"></div>
     </div>
 
     <script src="./headline-parser-app.js"></script>
