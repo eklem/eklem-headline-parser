@@ -4,7 +4,7 @@ Determines the most relevant keywords in a headline by considering article conte
 
 ## Demo
 ![Browser demo screenshot](./demo/ehp-demo-screenshot.png)
-Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/) or have a look at it's source files.
+Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/) or have a look at [the demo source files](https://github.com/eklem/eklem-headline-parser/tree/master/demo).
 
 
 ## Usage
