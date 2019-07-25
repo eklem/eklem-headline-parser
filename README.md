@@ -4,7 +4,7 @@ Determines the most relevant keywords in a headline by considering article conte
 
 ## Demo
 ![Browser demo screenshot](./demo/ehp-demo-screenshot.png)
-Check out the [browser demo](https://fergiemcdowall.github.io/stopword/dist/stopword.0.3.2.js) or have a look at it's source files.
+Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/dist/headline-parser.2.0.1.js) or have a look at it's source files.
 
 
 ## Usage
