@@ -15,6 +15,18 @@ module.exports =  [
     devtool: "none", // prevent webpack from using eval() on my module
   },
 
+  // Generating "latest" browser version of stopword (same as above)
+  {
+    mode: 'production',
+    entry: './index.js',
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'headline-parser.latest.js',
+      library: 'ehp'
+    },
+    devtool: "none", // prevent webpack from using eval() on my module
+  },
+
   // Generating test script for the browser
   {
     mode: 'production',
