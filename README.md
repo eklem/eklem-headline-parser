@@ -2,6 +2,11 @@
 
 Determines the most relevant keywords in a headline by considering article context. Works for Node.js and the browser. Started as a forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser).
 
+[![NPM version][npm-version-image]][npm-url]
+[![NPM downloads][npm-downloads-image]][npm-url]
+[![MIT License][license-image]][license-url]
+[![Build Status][travis-image]][travis-url]
+
 ## Demo
 ![Browser demo screenshot](./demo/ehp-demo-screenshot.png)
 Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/) or have a look at [the demo source files](https://github.com/eklem/eklem-headline-parser/tree/master/demo).
@@ -60,3 +65,12 @@ It's pretty simple.  The parser will count how many times a word in a title is r
 The parser is language agnostic, but for better accuracy, you should use the [stopword](https://www.npmjs.org/package/stopword) module to obtain only the words that are not stopwords. For this to happen, you need to define which langauge is used in the text analyzed.
 
 Some things to note: The module will not count partial appearances of keywords, or compounded keywords. For instance, if one of your headline keywords is ['china'], then neither "China", "china's" or "Indochina" will be counted as an appearance of that keyword.
+
+
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
+[npm-url]: https://npmjs.org/package/eklem-headline-parser
+[npm-version-image]: http://img.shields.io/npm/v/eklem-headline-parser.svg?style=flat
+[npm-downloads-image]: http://img.shields.io/npm/dm/eklem-headline-parser.svg?style=flat
+[travis-url]: http://travis-ci.org/eklem/eklem-headline-parser
+[travis-image]: http://img.shields.io/travis/eklem/eklem-headline-parser.svg?style=flat
