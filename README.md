@@ -27,7 +27,7 @@ const headlineParser = require('eklem-headline-parser')
 
 ```javascript
 const headlineParser = require('eklem-headline-parser')
-const stopword = require('stopword')
+const sw = require('stopword')
 
 // Declare variables for your headline and article summary. These have been edited to provide a good example.
 let headline = 'China successfully develops drone defense system'
@@ -35,7 +35,7 @@ let headline = 'China successfully develops drone defense system'
 let body = 'China has tested a self-developed laser defense system against small-scale low-altitude drones, state media said on Sunday. Reportedly, the drone defense is designed to destroy small-scale drones flying within an altitude of 500 meters and at speeds below 50 meters per second. In addition to the drone network, china has developed stealth jets and has built one aircraft carrier.'
 
 // Find the most relevant keywords in the headline, sorted by number of appearances in the body text
-let important_keywords = headline_parser.findKeywords(stopword.removeStopwords(headline.split(' ')), body.split(' '), 3);
+let important_keywords = headline_parser.findKeywords(sw.removeStopwords(headline.split(' ')), body.split(' '), 3);
 
 // => Returns the top three occuring words [ 'drone', 'defence', 'China' ], with 'drone' appearing most often.
 ```
