@@ -25,7 +25,7 @@ const calculateKeywords = function () {
   console.log(headlinetext)
   console.log(bodytext)
   var importantKeywords = []
-  var importantKeywords = ehp.findKeywords(stopword.removeStopwords(headlinetext), bodytext);
+  var importantKeywords = ehp.findKeywords(sw.removeStopwords(headlinetext), bodytext);
   console.log('Keywords: ' + importantKeywords)
   populateKeywords(importantKeywords)
 }

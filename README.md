@@ -2,6 +2,10 @@
 
 Determines the most relevant keywords in a headline by considering article context. Works for Node.js and the browser. Started as a forked version of [TessMyers](https://github.com/TessMyers) [headline-parser](https://github.com/TessMyers/headline-parser).
 
+## Demo
+Check out the [browser demo](https://fergiemcdowall.github.io/stopword/dist/stopword.0.3.2.js), or have a look at it's source files.
+
+
 ## Usage
 
 ### Node.js

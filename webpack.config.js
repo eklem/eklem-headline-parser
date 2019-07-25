@@ -12,9 +12,6 @@ module.exports =  [
       filename: 'headline-parser.' + package.version+ '.js',
       library: 'ehp'
     },
-    externals: {
-      sw: 'sw'
-    },
     devtool: "none", // prevent webpack from using eval() on my module
   },
 
