@@ -1,9 +1,9 @@
-const findKeywords = function( headline, body, cutoff = 0){
+const findKeywords = function (headline, body, cutoff = 0) {
   // remove duplicates in headline
   headline = [...new Set(headline)]
-  
+
   // keywords array of word objects with word count
-  let keywordsCount = []
+  const keywordsCount = []
   // returned array (cutoff if != 0)
   let keywords = []
 
@@ -13,12 +13,12 @@ const findKeywords = function( headline, body, cutoff = 0){
       // headline/body mathching
       if (headline[i] === body[j]) {
         // check if word exists in keywordsCount first and update it
-        let existing = findExistingWord(keywordsCount, 'word', headline[i])
+        const existing = findExistingWord(keywordsCount, 'word', headline[i])
         if (existing > -1) {
           keywordsCount[existing].count++
         } else {
           // create object and push to array
-          let wordObj = {word: headline[i], count: 1}
+          const wordObj = { word: headline[i], count: 1 }
           keywordsCount.push(wordObj)
         }
       }
@@ -33,28 +33,28 @@ const findKeywords = function( headline, body, cutoff = 0){
   }
   // slice, if cutoff set
   if (cutoff > 0) {
-    keywords = keywords.slice(0,cutoff)
+    keywords = keywords.slice(0, cutoff)
   }
   return keywords
 }
 
-const findExistingWord = function(array, attr, value) {
-  for(var k = 0; k < array.length; k += 1) {
-      if(array[k][attr] === value) {
-          return k;
-      }
+const findExistingWord = function (array, attr, value) {
+  for (var k = 0; k < array.length; k += 1) {
+    if (array[k][attr] === value) {
+      return k
+    }
   }
-  return -1;
+  return -1
 }
 
-const compareObjects = function( a, b ) {
-  if ( a.count > b.count ){
-    return -1;
+const compareObjects = function (a, b) {
+  if (a.count > b.count) {
+    return -1
   }
-  if ( a.count < b.count ){
-    return 1;
+  if (a.count < b.count) {
+    return 1
   }
-  return 0;
+  return 0
 }
 
 module.exports = {
