@@ -1,6 +1,6 @@
 {
   "name": "eklem-headline-parser",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Determines the most relevant keywords from an article headline",
   "main": "index.js",
   "scripts": {
@@ -35,6 +35,6 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "tape": "^5.0.1",
-    "tape-run": "^7.0.0"
+    "tape-run": "^8.0.0"
   }
 }
