@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/eklem/eklem-headline-parser",
   "dependencies": {
-    "stopword": "^1.0.9"
+    "stopword": "^1.0.10"
   },
   "devDependencies": {
     "standard": "^16.0.0",
