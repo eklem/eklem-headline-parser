@@ -1,12 +1,13 @@
 {
   "name": "eklem-headline-parser",
-  "version": "2.0.8",
+  "version": "3.0.0",
   "description": "Determines the most relevant keywords from an article headline",
-  "main": "index.js",
+  "main": "./dist/eklem-headline-parser.cjs.js",
+  "module": "./dist/eklem-headline-parser.esm.mjs",
+  "browser": "./dist/eklem-headline-parser.umd.js",
   "scripts": {
-    "compile-for-browser": "webpack",
-    "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
-    "test": "standard './*.js' './test/*.js' && npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && rm -rf ./test/sandbox"
+    "build": "rollup --config",
+    "test": "standard './*.js' && npm run build && npx ava ./test/test.cjs.js && ava ./test/test.esm.mjs && ava ./test/ui-test.js"
   },
   "repository": {
     "type": "git",
@@ -31,14 +32,7 @@
     "stopword": "^1.0.11"
   },
   "devDependencies": {
-    "standard": "^16.0.0",
-    "webpack": "^5.48.0",
-    "webpack-cli": "^4.7.2",
-    "tape": "^5.3.0",
-    "tape-run": "^9.0.0",
-    "path-browserify": "^1.0.1",
-    "stream-browserify": "^3.0.0",
-    "process": "^0.11.10",
-    "buffer": "^6.0.3"
+    "batr": "^1.0.5",
+    "stopword": "^1.0.11"
   }
 }

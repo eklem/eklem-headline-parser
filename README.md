@@ -16,18 +16,34 @@ Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/
 
 ## Usage
 
-### Node.js
-
+### Common JS
 ```javascript
 const headlineParser = require('eklem-headline-parser')
 // headlineParser.findKeywords(headline, body [, cutoff]) now available
 ```
 
-### Script tag method
+### ES Modules
+```javascript
+import headlineParser from 'eklem-headline-parser'
+// headlineParser.findKeywords(headline, body [, cutoff]) now available
+```
+
+### UMD - Script tag method
 ```javascript
 <script src="headline-parser.js"></script>
 <script>
 // ehp.findKeywords(headline, body [, cutoff]) now available
+</script>
+```
+
+### Remove noise
+To skip all words with little or no meaning, use a stopword stripping library, i.e. [stopword](https://github.com/fergiemcdowall/stopword).
+
+```javascript
+<script src="headline-parser.js"></script>
+<script src="stopword.js"></script>
+<script>
+// ehp.findKeywords(sw.removeStopwords(headline), body [, cutoff])
 </script>
 ```
 
