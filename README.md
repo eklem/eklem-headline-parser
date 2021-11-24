@@ -4,8 +4,7 @@ Determines the most relevant keywords in a headline by considering article conte
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![Build Status][build-image]][build-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
@@ -90,9 +89,7 @@ Some things to note: The module will not count partial appearances of keywords, 
 [npm-url]: https://npmjs.org/package/eklem-headline-parser
 [npm-version-image]: http://img.shields.io/npm/v/eklem-headline-parser.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/eklem-headline-parser.svg?style=flat
-[travis-url]: http://travis-ci.org/eklem/eklem-headline-parser
-[travis-image]: http://img.shields.io/travis/eklem/eklem-headline-parser.svg?style=flat
-[snyk-url]: https://snyk.io/test/github/eklem/eklem-headline-parser?targetFile=package.json
-[snyk-image]: https://snyk.io/test/github/eklem/eklem-headline-parser/badge.svg?targetFile=package.json
+[build-url]: https://github.com/eklem/eklem-headline-parser/actions/workflows/tests.yml
+[build-image]: https://github.com/eklem/eklem-headline-parser/actions/workflows/tests.yml/badge.svg
 [standardjs-url]: https://standardjs.com
 [standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
