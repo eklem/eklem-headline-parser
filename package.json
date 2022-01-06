@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/eklem/eklem-headline-parser",
   "devDependencies": {
-    "batr": "^2.0.0",
+    "batr": "^2.0.1",
     "stopword": "^1.0.11"
   }
 }
