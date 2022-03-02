@@ -34,7 +34,7 @@ test('test', pageMacro, async (t, page) => {
   await page.keyboard.press('Tab')
 
   // Fill [placeholder="Add a lot of body text"]
-  await page.keyboard.type('to analyze a headline we need a heading and then some bodytext that could be compared for the analyze to work')
+  await page.keyboard.type('to analyze a headline we need a heading and then some bodytext that could be compared to analyze to work')
 
   // Click #keywordsFound
   await page.click('#keywordsFound')
