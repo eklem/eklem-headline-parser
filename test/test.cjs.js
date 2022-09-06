@@ -1,8 +1,7 @@
 // libraries
 const test = require('ava')
-const ehp = require('../dist/eklem-headline-parser.cjs.js')
+const { findKeywords } = require('../dist/eklem-headline-parser.cjs.js')
 const sw = require('stopword')
-const findKeywords = ehp.findKeywords
 
 // const titleArray = ['her', 'var', 'det', 'bra']
 const titleArray = [

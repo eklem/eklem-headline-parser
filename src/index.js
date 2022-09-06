@@ -57,6 +57,4 @@ const compareObjects = function (a, b) {
   return 0
 }
 
-module.exports = {
-  findKeywords: findKeywords
-}
+export { findKeywords }

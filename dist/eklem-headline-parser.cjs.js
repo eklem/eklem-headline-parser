@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 const findKeywords = function (headline, body, cutoff = 0) {
   // remove duplicates in headline
   headline = [...new Set(headline)];
@@ -59,8 +61,4 @@ const compareObjects = function (a, b) {
   return 0
 };
 
-var src = {
-  findKeywords: findKeywords
-};
-
-module.exports = src;
+exports.findKeywords = findKeywords;

@@ -1,8 +1,7 @@
 // libraries
 import test from 'ava'
-import ehp from '../dist/eklem-headline-parser.cjs.js'
+import { findKeywords} from '../dist/eklem-headline-parser.cjs.js'
 import sw from 'stopword'
-const findKeywords = ehp.findKeywords
 
 // const titleArray = ['her', 'var', 'det', 'bra']
 const titleArray = [

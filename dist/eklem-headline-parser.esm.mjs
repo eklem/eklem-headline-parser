@@ -57,8 +57,4 @@ const compareObjects = function (a, b) {
   return 0
 };
 
-var src = {
-  findKeywords: findKeywords
-};
-
-export { src as default };
+export { findKeywords };

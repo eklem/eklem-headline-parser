@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ehp = factory());
-})(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.ehp = {}));
+})(this, (function (exports) { 'use strict';
 
   const findKeywords = function (headline, body, cutoff = 0) {
     // remove duplicates in headline
@@ -63,10 +63,8 @@
     return 0
   };
 
-  var src = {
-    findKeywords: findKeywords
-  };
+  exports.findKeywords = findKeywords;
 
-  return src;
+  Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
