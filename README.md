@@ -4,10 +4,14 @@ Determines the most relevant keywords in a headline by considering article conte
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
+[![](https://data.jsdelivr.com/v1/package/npm/eklem-headline-parser/badge?style=rounded)](https://www.jsdelivr.com/package/npm/eklem-headline-parser)
 [![Build Status][build-image]][build-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
+## Breaking change
+
+API on importing CJS- and ESM-script changed. 
 ## Demo
 ![Browser demo screenshot](./demo/ehp-demo-screenshot.png)
 Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/) or have a look at [the demo source files](https://github.com/eklem/eklem-headline-parser/tree/master/demo).
@@ -17,19 +21,19 @@ Check out the [browser demo](https://eklem.github.io/eklem-headline-parser/demo/
 
 ### Common JS
 ```javascript
-const headlineParser = require('eklem-headline-parser')
-// headlineParser.findKeywords(headline, body [, cutoff]) now available
+const { findKeywords } = require('eklem-headline-parser')
+// findKeywords(headline, body [, cutoff]) now available
 ```
 
 ### ES Modules
 ```javascript
-import headlineParser from 'eklem-headline-parser'
-// headlineParser.findKeywords(headline, body [, cutoff]) now available
+import { findKeywords } from 'eklem-headline-parser'
+// findKeywords(headline, body [, cutoff]) now available
 ```
 
 ### UMD - Script tag method
 ```javascript
-<script src="headline-parser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/eklem-headline-parser@4.0.0/dist/eklem-headline-parser.umd.min.js"></script>
 <script>
 // ehp.findKeywords(headline, body [, cutoff]) now available
 </script>
