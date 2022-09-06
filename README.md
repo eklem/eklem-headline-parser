@@ -33,7 +33,7 @@ import { findKeywords } from 'eklem-headline-parser'
 
 ### UMD - Script tag method
 ```javascript
-<script src="https://cdn.jsdelivr.net/npm/eklem-headline-parser@4.0.0/dist/eklem-headline-parser.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/eklem-headline-parser/dist/eklem-headline-parser.umd.min.js"></script>
 <script>
 // ehp.findKeywords(headline, body [, cutoff]) now available
 </script>
