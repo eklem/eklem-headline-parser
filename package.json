@@ -1,6 +1,6 @@
 {
   "name": "eklem-headline-parser",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Determines the most relevant keywords from an article headline",
   "main": "./dist/eklem-headline-parser.cjs.js",
   "module": "./dist/eklem-headline-parser.esm.mjs",
