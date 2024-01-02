@@ -30,6 +30,6 @@
   "homepage": "https://github.com/eklem/eklem-headline-parser",
   "devDependencies": {
     "batr": "^2.1.10",
-    "stopword": "^2.0.8"
+    "stopword": "^3.0.1"
   }
 }
