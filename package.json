@@ -23,7 +23,7 @@
     "context"
   ],
   "author": "eklem <espen.klem@gmail.com> (http://lab.klemespen.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eklem/eklem-headline-parser/issues"
   },
